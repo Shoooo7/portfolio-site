@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Артём Волков -- веб-дизайнер и верстальщик</title>
+  <meta name="description" content="Портфолио веб-дизайнера и верстальщика Артёма Волкова. Лендинги, сайты-визитки, адаптивная вёрстка.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Артём Волков</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">
+      <label for="menu-toggle" class="burger" aria-hidden="true"><span></span><span></span></label>
+
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#works">Работы</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Главный экран -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero__role">Веб-дизайнер / Верстальщик</p>
+        <h1 class="hero__title">Артём<br>Волков</h1>
+        <p class="hero__text">Делаю чистые, быстрые и понятные сайты для мастеров, small-бизнеса и личных проектов.</p>
+        <a href="#works" class="btn">Смотреть работы</a>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+      <div class="container about">
+        <h2 class="section__title">Обо мне</h2>
+        <div class="about__body">
+          <p class="lead">Мне 16 лет, и я верстаю сайты, которые приятно открывать с телефона.</p>
+          <p>Работаю на чистом HTML и CSS, без лишнего кода и тяжёлых конструкторов. Использую ИИ как помощника, но каждую деталь проверяю и дорабатываю сам, чтобы сайт выглядел аккуратно и работал везде.</p>
+          <p>Беру небольшие проекты: лендинги, визитки, страницы-приглашения, правки готовых сайтов. Отвечаю быстро и показываю результат до оплаты финальной версии.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Мои работы -->
+    <section class="section" id="works">
+      <div class="container">
+        <h2 class="section__title">Мои работы</h2>
+        <div class="works">
+
+          <article class="card">
+            <div class="card__thumb thumb--1" role="img" aria-label="Превью проекта Nail Studio"></div>
+            <h3 class="card__title">Nail Studio</h3>
+            <p class="card__text">Лендинг для мастера маникюра: услуги, цены, запись по кнопке.</p>
+            <p class="card__tags">HTML, CSS, адаптив</p>
+          </article>
+
+          <article class="card">
+            <div class="card__thumb thumb--2" role="img" aria-label="Превью проекта Урок с Анной"></div>
+            <h3 class="card__title">Урок с Анной</h3>
+            <p class="card__text">Сайт-визитка репетитора по английскому с форматами занятий и отзывами.</p>
+            <p class="card__tags">HTML, CSS</p>
+          </article>
+
+          <article class="card">
+            <div class="card__thumb thumb--3" role="img" aria-label="Превью проекта Кофейня Зерно"></div>
+            <h3 class="card__title">Кофейня «Зерно»</h3>
+            <p class="card__text">Одностраничное меню с адресом, часами работы и картой проезда.</p>
+            <p class="card__tags">HTML, CSS, вёрстка меню</p>
+          </article>
+
+          <article class="card">
+            <div class="card__thumb thumb--4" role="img" aria-label="Превью проекта Приглашение на день рождения"></div>
+            <h3 class="card__title">Приглашение на праздник</h3>
+            <p class="card__text">Страница-приглашение с программой, местом и кнопкой «Приду».</p>
+            <p class="card__tags">HTML, CSS</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Навыки</h2>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Адаптивная вёрстка</li>
+          <li>Flexbox и Grid</li>
+          <li>Вайбкодинг с ИИ</li>
+          <li>Типографика</li>
+          <li>Базовый UI-дизайн</li>
+          <li>Git и GitHub Pages</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div>
+          <h2 class="section__title">Контакты</h2>
+          <p class="lead">Расскажите о проекте, и я отвечу в течение дня.</p>
+          <ul class="links">
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="https://t.me/username">Telegram: @username</a></li>
+            <li><a href="https://vk.com/username">ВКонтакте</a></li>
+          </ul>
+        </div>
+
+        <!-- Форма: замените action на свой адрес (например, Formspree) -->
+        <form class="form" action="https://formspree.io/f/your-id" method="post">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+
+          <label for="email">Почта или Telegram</label>
+          <input type="text" id="email" name="contact" placeholder="Куда ответить" required>
+
+          <label for="message">О проекте</label>
+          <textarea id="message" name="message" rows="5" placeholder="Что нужно сделать и к какому сроку" required></textarea>
+
+          <button type="submit" class="btn btn--full">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Артём Волков</p>
+      <a href="#top">Наверх</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
 
